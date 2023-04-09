@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASS NAME</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div class="nav-container">
+        <heading>Assign Work</heading>
+        <div id="myButton" class="button">+</div>
+    </div>
+    <div class="assignment-page" id ="assignment-page">
+    </div>
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>
+                Task Name: <input id="task-name" type="text">
+            </p>
+            <div class="dropdown">
+                <div class="select">
+                    <span class="selected" id="small">Type</span>
+                    <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                    <li class="small">Multiplication</li>
+                    <li class="small">Division</li>
+                    <li class="small">Addition</li>
+                    <li class="small">Subtraction</li>
+                </ul>
+            </div>
+            <button id="addTask">Add Task</button>
+        </div>
+
+    </div>
+</body>
+<script type="module" src="js/teacherclass.js"></script>
+</html>

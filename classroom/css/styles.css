@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 1%;
+    font-size: 40px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header {
+    font-weight: bold;
+    font-size: 50px;
+}
+p {
+    font-size: 20px;
+}
+.assignment-page {
+    padding: 10px;
+    margin: 2%;
+}
+
+#operation{
+    color: lightgray;
+    font-size:25px;
+    float: left;
+}
+
+#left{
+    float: right;
+    padding: 40px;
+}
+
+.centerTwo{
+    margin: auto;
+    width: 50%;
+    border: 3px solid gray;
+    padding: 10px;
+    height: 175px;
+    margin-top: 20px;
+}
+
+.dropdown{
+    min-width: 3em;
+    position: relative;
+    margin: 10px;
+}
+
+.dropdown *{
+    box-sizing: border-box;
+}
+
+.small{
+    font-size:20px;
+}
+
+#small{
+    font-size: 20px;
+}
+
+.select{
+    background: rgb(255, 255, 255);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #000000 solid;
+    border-radius: 0.5em;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.select-clicked{
+    border: 2px #26489a solid;
+    box-shadow: 0 0 0.8em black;
+}
+
+.select:hover{
+    background: rgb(227, 227, 227);
+}
+
+.caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3;
+}
+
+.caret-rotate{
+    transform: rotate(180deg);
+}
+
+.menu{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: white;
+    border: 1px black solid;
+    box-shadow: 0 0.5em 1em rgba(0,0,0,0.2);
+    border-radius: 0.5em;
+    color: black;
+    position: absolute;
+    top: 1.5em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.menu li{
+    padding: 0.2em 0.2em;
+    margin: 0.1em 0;
+    border-radius: 0.1em;
+    cursor: pointer;
+}
+
+.menu li:hover{
+    background: rgb(214, 214, 214);
+}
+
+.active{
+    background: #cccccc;
+}
+
+.menu-open{
+    display: block;
+    opacity: 1;
+}
+
+#numQuestions{
+    float: right;
+}
+
+#questions{
+    float: left;
+}
+
+#correct{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    color: gray;
+}
+
+
+.left{
+    margin: auto;
+    width: 50%;
+    border: 3px solid gray;
+    padding: 10px;
+}
+
+.subject{
+    text-align: left;
+    float: left;
+    margin: 10px;
+}
+
+.assignment{
+    width: 750px;
+    padding: 10px;
+    margin: 20px;
+    height: 75px;
+}
+
+#date{
+    color: lightgray;
+    font-size:25px;
+    float: left;
+}
+
+.name_assignment{
+    font-size: 30px;
+    float: left;
+    margin: 10px;
+
+}
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid gray;
+    padding: 10px;
+    height: 100px;
+    margin-top: 20px;
+  }
+.button {
+    padding: 0;
+    float:right;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 210%;
+    vertical-align: middle;
+    display: table-cell;
+    box-shadow: 0px 0px 10px 5px lightgray;
+    cursor: pointer;
+}
+.rectanglebutton {
+    width: 20%;
+    background-color: white;
+    border: none;
+    height: 75px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 210%;
+    display: table-cell;
+    box-shadow: 0px 0px 10px 5px rgb(228, 226, 226);
+    cursor: pointer;
+    display: block;
+    margin-left: 40%;
+    margin-top: 5%;
+
+}
+/* header */
+#header-nav {
+    height: 100px;
+    width: 100%;
+    padding: 10;
+    border-radius: 0;
+    border: 0;
+}
+  
+  #logo-img {
+    background: url('../images/restaurant-logo_large.png') no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0,0.4);
+}
+.modal-content {
+    font-size: 20px;
+    background-color: white;
+    margin: 15% auto;
+    padding: 40px;
+    width: 50%;
+}
+
+.video {
+    margin-left: 28%;
+}
+.close {
+    color: lightgray;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    cursor: pointer;
+}
+
+.task, .added-class, .start {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: white;
+    padding: 20px;
+    margin: 1%;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px lightgray;
+}
+
+.task:hover, .added-class:hover, .rectanglebutton:hover {
+    background-color: aliceblue;
+}
+
+.start:hover {
+    background-color: rgb(223, 242, 223);
+}
